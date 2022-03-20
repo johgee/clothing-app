@@ -1,0 +1,29 @@
+### Clothings Index
+GET http://localhost:3000/clothings.json
+
+### Clothings Create
+POST http://localhost:3000/clothings.json
+Content-Type: application/json
+
+{
+"item": "Test item",
+"price": 100,
+"size": 00
+}
+
+### Clothings Show
+GET http://localhost:3000/clothings/1.json
+
+### Clothings Update
+PATCH http://localhost:3000/clothings/1.json
+Content-Type: application/json
+
+{
+"name": "update",
+"price": 10000,
+"size": 1000
+}
+
+### Clothings Destroy
+DELETE http://localhost:3000/clothings/1.json
+end
